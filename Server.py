@@ -3,7 +3,7 @@ from time import *
 
 server = socket(AF_INET,SOCK_STREAM)
 print('socket created')
-server.bind(('192.168.96.170',9996))
+server.bind(('localhost',9996))
 server.listen()
 print('waiting for connections')
 connection,address = server.accept()
